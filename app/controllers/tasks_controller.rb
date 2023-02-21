@@ -13,7 +13,7 @@ class TasksController < ApplicationController
     @task = Task.new
   end
 
-  def create
+  def create 
     @task = Task.new(task_params)
     @task.save
     # No need for app/views/restaurants/create.html.erb
