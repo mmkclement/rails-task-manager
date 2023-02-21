@@ -1,0 +1,27 @@
+<h2 id="head"><%= @task.title %></h2>
+<p><%= @task.details %></p>
+<p><%= @task.completed %></p>
+
+    <div class= >
+        <%= button_to task_path(@task),
+                    method: :delete,
+                    data: {turbo_confirm: "Are you sure?" },
+                    class: "btn btn-danger" do %>
+          Delete
+        <% end %>
+    </div>
+
+    <div>
+        <%= button_to edit_task_path(@task),
+          method: :get,
+          data: { confirm: "Are you sure?" },
+          :class => "btn btn-info" do %>
+          Edit
+        <% end %>
+
+
+
+    </div>
+
+
+    <%= link_to "Home", root_path%>

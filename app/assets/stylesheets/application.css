@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+
+#head {
+  color: balck;
+  justify-content: center;
+  align-items: center;
+}
